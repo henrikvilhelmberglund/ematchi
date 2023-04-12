@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Countdown from "./Countdown.svelte";
   import Found from "./Found.svelte";
   import Grid from "./Grid.svelte";
 
@@ -38,6 +39,7 @@
       }} />
   </div>
   <div class="info">
+    <Countdown remaining={level.duration} />
     <Found {found} />
   </div>
 </div>
